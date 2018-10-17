@@ -8,7 +8,7 @@ permalink: index.html
 summary: These instructions will help you in setup server and mobile application.
 ---
 
-{% include note.html content="Video guide for getting Debug SHA1 fingerprint is available, checkout [https://www.youtube.com/watch?v=Zj97ey18ib4](https://www.youtube.com/watch?v=Zj97ey18ib4)" %}
+{% include note.html content="Video guide for getting Debug SHA1 fingerprint is available, checkout [https://www.youtube.com/watch?v=OQl6Me2_gEA](https://www.youtube.com/watch?v=OQl6Me2_gEA)" %}
 
 # Introduction
 Yoohoo is real-time complete chatting app with groups and voice messages functionality. The user can send pictures, audio, video, contact detail, map location, voice messages, a user can create groups as well.
@@ -83,7 +83,7 @@ Yoohoo is real-time complete chatting app with groups and voice messages functio
       - Enable **Phone Authentication**
 
       **`Theming`**
-      - You can control the color used in app from app/build.gradle itself.
+      - You can control the color used in app from `app/build.gradle` itself.
       - We provide scope for customization of following values:
 
             resValue 'color', "colorPrimary", "#2196F3"
