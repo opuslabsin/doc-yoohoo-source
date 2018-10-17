@@ -8,6 +8,8 @@ permalink: index.html
 summary: These instructions will help you in setup server and mobile application.
 ---
 
+{% include note.html content="Video guide for getting Debug SHA1 fingerprint is available, checkout [https://www.youtube.com/watch?v=Zj97ey18ib4](https://www.youtube.com/watch?v=Zj97ey18ib4)" %}
+
 # Introduction
 Yoohoo is real-time complete chatting app with groups and voice messages functionality. The user can send pictures, audio, video, contact detail, map location, voice messages, a user can create groups as well.
 
@@ -43,9 +45,15 @@ Yoohoo is real-time complete chatting app with groups and voice messages functio
       - **admob_banner_id**
       - **sinch_app_key**
       - **sinch_app_secret**
-      - **sinch_app_environment**
+      - **sinch_app_environment** - set this to `clientapi.sinch.com` for production app
 
       You will need to update above values in `app/build.gradle`
+
+      **`Refactoring`**
+      - Change the `applicationId` in `app/build.gradle`, set this to the package name you want to keep for your application e.g com.yoohoo
+      - Use the same package name while setting up android app in Firebase in the next step.
+      - Logo and placeholders used in app are png images which you will find in `app/src/main/res/drawable` folder.
+      - To change the images in app simply replace the images at above mentioned location with your images.
 
       **`Firebase Setup`**
       - Create a Firebase account or log into an existing account.
@@ -73,6 +81,14 @@ Yoohoo is real-time complete chatting app with groups and voice messages functio
       <p align="center"><img src="{{ "images/8.5-firebase-sign-in-method.png" }}"/></p>
 
       - Enable **Phone Authentication**
+
+      **`Theming`**
+      - You can control the color used in app from app/build.gradle itself.
+      - We provide scope for customization of following values:
+
+            resValue 'color', "colorPrimary", "#2196F3"
+            resValue 'color', "colorPrimaryDark", "#1976D2"
+            resValue 'color', "colorAccent", "#1A237E"
 
       **`Useful links`**
       - SHA-1 key related
